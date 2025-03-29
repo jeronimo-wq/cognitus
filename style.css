@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: right;
+    border: 1rem solid #000;
+}
+
+#pageImage {
+    height: 10rem;
+}
+
+header #pageImage {
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 50%;
+}
+nav {
+    border: 1rem solid purple;
+}
+.cocacola {
+    border: 0.1rem solid salmon;
+}
+
+.altuta {
+    height: 1rem;
+}
+.vinotinto {
+    border: 0.1rem solid black;
+    height: 1rem 
+}
+aside {
+    border: 1rem solid darkblue;
+}
+main {
+    border: 1rem solid darkred;
+}
+footer {
+    border: 1rem solid gray;
+    height: 1rem;
+}
