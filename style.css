@@ -1,39 +1,67 @@
+div {
+    background: darkcyan;
+}
+#generalContainer {
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+
+    grid-template:
+    "nav aside header" 10rem
+    "nav aside main" auto
+    "nav aside footer" 4rem /
+    9rem 9rem auto;
+}
+
+.wrapper {
+    border-radius: 1rem;
+}
+
 header {
+    grid-area: header; 
     display: flex;
     justify-content: right;
-    border: 1rem solid #000;
+    border: .2rem solid royalblue;
+    background: white;
 }
 
 #pageImage {
-    height: 10rem;
+    height: 7rem;
 }
 
 header #pageImage {
-    height: 8.5rem;
+    height: 7rem;
     width: 8.5rem;
     border-radius: 50%;
 }
 nav {
-    border: 1rem solid purple;
+    grid-area: nav;
+    border: 1rem solid aquamarine;
+    background: white;
 }
 .cocacola {
-    border: 0.1rem solid salmon;
+    border: 0.1rem solid mediumaquamarine;
 }
 
 .altuta {
-    height: 1rem;
+    /* height: 1rem; */
 }
 .vinotinto {
     border: 0.1rem solid black;
-    height: 1rem 
+    /* height: 1rem  */
 }
 aside {
-    border: 1rem solid darkblue;
+    grid-area: aside;
+    border: 1rem solid mediumblue;
+    background: white;
 }
 main {
+    grid-area: main;
     border: 1rem solid darkred;
+    background: white;
 }
 footer {
+    grid-area: footer;
     border: 1rem solid gray;
-    height: 1rem;
+    background: white;
 }
